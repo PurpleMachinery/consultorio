@@ -46,18 +46,3 @@ CREATE TABLE fichamentos(
 	realizacao BIT NOT NULL DEFAULT '0'
 )
 GO
-INSERT INTO pacientes (nome, nascimento, cpf, sexo) VALUES
-	('wesley', '1999-11-08', '49004595893', 'm'),
-	('Alexandre', '31-03-1999', '47474777112', 'm')
-
-INSERT INTO medicos (nome, nascimento, cpf, sexo) VALUES
-	('rafael', '1990-10-10', '48555177559', 'm')
-
-INSERT INTO atendentes (nome, nascimento, cpf, sexo) VALUES
-	('cafezinho', '1995-10-05', '49115485965', 'f')
-	
-INSERT INTO especializacoes VALUES
-	('1', 'otorrino', '484848595959')
-	
-INSERT INTO fichamentos VALUES
-	('2', '1', '1', 'Para de tomar corote', '2018-03-13', '15:10:00', '1')
