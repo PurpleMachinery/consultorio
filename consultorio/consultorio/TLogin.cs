@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace consultorio
 {
-    public partial class frmMenu : Form
+    public partial class TLogin : Form
     {
-        public frmMenu()
+        public TLogin()
         {
             InitializeComponent();
         }

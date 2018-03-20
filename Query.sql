@@ -3,14 +3,18 @@ DROP DATABASE dsii;
 CREATE DATABASE dsii;
 USE dsii;
 
-CREATE TABLE medicos(
+CREATE TABLE pessoas(
 	pk_id INT PRIMARY KEY IDENTITY(1,1),
     nome NVARCHAR(60) NOT NULL,
     cpf BIGINT NOT NULL,
     nascimento DATE NOT NULL,
-    sexo CHAR NOT NULL,
+    sexo CHAR NOT NULL,	
 	telefone NVARCHAR(13),
-	endereco NVARCHAR(100),
+	endereco NVARCHAR(100)
+)
+
+CREATE TABLE medicos(
+	pk_id INT PRIMARY KEY IDENTITY(1,1),
     registroMedicina NVARCHAR(30) NOT NULL
 );
 
@@ -27,22 +31,12 @@ CREATE TABLE especializacoes(
 
 CREATE TABLE pacientes(
 	pk_id INT PRIMARY KEY IDENTITY(1,1),
-    nome NVARCHAR(60) NOT NULL,
-    cpf BIGINT NOT NULL,
-    sexo CHAR NOT NULL,
-	telefone NVARCHAR(13),
-	endereco NVARCHAR(100),
-    nascimento DATE NOT NULL
+	fk_idPessoa INT REFERENCES pessoas(pk_id)
 );
 
 CREATE TABLE atendentes(
 	pk_id INT PRIMARY KEY IDENTITY(1,1),
-    nome NVARCHAR(60) NOT NULL,
-    cpf BIGINT NOT NULL,
-    sexo CHAR NOT NULL,
-	telefone NVARCHAR(13),
-	endereco NVARCHAR(100),
-    nascimento DATE NOT NULL
+	fk_idPessoa INT REFERENCES pessoas(pk_id)    
 );
 
 CREATE TABLE funcionarios(
