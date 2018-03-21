@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consultorio", "consultorio\consultorio.csproj", "{FD59BC69-1E9F-4BEF-B851-D2FAB8C77356}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consultorio", "Consultorio\Consultorio.csproj", "{E2013CC5-1EAC-47B4-A267-AF310A33D066}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FD59BC69-1E9F-4BEF-B851-D2FAB8C77356}.Debug|x86.ActiveCfg = Debug|x86
-		{FD59BC69-1E9F-4BEF-B851-D2FAB8C77356}.Debug|x86.Build.0 = Debug|x86
-		{FD59BC69-1E9F-4BEF-B851-D2FAB8C77356}.Release|x86.ActiveCfg = Release|x86
-		{FD59BC69-1E9F-4BEF-B851-D2FAB8C77356}.Release|x86.Build.0 = Release|x86
+		{E2013CC5-1EAC-47B4-A267-AF310A33D066}.Debug|x86.ActiveCfg = Debug|x86
+		{E2013CC5-1EAC-47B4-A267-AF310A33D066}.Debug|x86.Build.0 = Debug|x86
+		{E2013CC5-1EAC-47B4-A267-AF310A33D066}.Release|x86.ActiveCfg = Release|x86
+		{E2013CC5-1EAC-47B4-A267-AF310A33D066}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

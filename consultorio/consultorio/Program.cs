@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace consultorio
+namespace Consultorio
 {
     static class Program
     {
@@ -15,7 +15,7 @@ namespace consultorio
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMenu());
+            Application.Run(new frmLogin());
         }
     }
 }

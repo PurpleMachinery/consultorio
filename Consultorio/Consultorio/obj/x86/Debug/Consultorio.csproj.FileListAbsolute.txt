@@ -1,0 +1,10 @@
+C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\bin\Debug\Consultorio.exe
+C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\bin\Debug\Consultorio.pdb
+C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmMenu.resources
+C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmCadastro.resources
+C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.Properties.Resources.resources
+C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.csproj.GenerateResource.Cache
+C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.exe
+C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.pdb
+C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmLogin.resources
+C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmConsulta.resources

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace consultorio.Properties
+namespace Consultorio.Properties
 {
 
 

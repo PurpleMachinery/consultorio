@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace consultorio
+namespace Consultorio
 {
-    public partial class Medico : Form
+    public partial class frmCadastro : Form
     {
-        public Medico()
+        public frmCadastro()
         {
             InitializeComponent();
         }

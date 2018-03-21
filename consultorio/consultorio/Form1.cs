@@ -7,13 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace consultorio
+namespace Consultorio
 {
-    public partial class frmMenu : Form
+    public partial class frmLogin : Form
     {
-        public frmMenu()
+        public frmLogin()
         {
             InitializeComponent();
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            frmMenu tt = new frmMenu();
+            tt.Show();
+            this.Visible=false;
         }
     }
 }
