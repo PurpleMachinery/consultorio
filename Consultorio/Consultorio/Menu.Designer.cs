@@ -32,6 +32,9 @@
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pessoaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.especialidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarEspecialidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,10 +66,33 @@
             // 
             // cadastrarToolStripMenuItem
             // 
+            this.cadastrarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pessoaToolStripMenuItem,
+            this.especialidadeToolStripMenuItem,
+            this.registrarEspecialidadeToolStripMenuItem});
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
             this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cadastrarToolStripMenuItem.Text = "Cadastrar";
-            this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
+            // 
+            // pessoaToolStripMenuItem
+            // 
+            this.pessoaToolStripMenuItem.Name = "pessoaToolStripMenuItem";
+            this.pessoaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pessoaToolStripMenuItem.Text = "Pessoa";
+            this.pessoaToolStripMenuItem.Click += new System.EventHandler(this.pessoaToolStripMenuItem_Click);
+            // 
+            // especialidadeToolStripMenuItem
+            // 
+            this.especialidadeToolStripMenuItem.Name = "especialidadeToolStripMenuItem";
+            this.especialidadeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.especialidadeToolStripMenuItem.Text = "Especialidade";
+            this.especialidadeToolStripMenuItem.Click += new System.EventHandler(this.especialidadeToolStripMenuItem_Click);
+            // 
+            // registrarEspecialidadeToolStripMenuItem
+            // 
+            this.registrarEspecialidadeToolStripMenuItem.Name = "registrarEspecialidadeToolStripMenuItem";
+            this.registrarEspecialidadeToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.registrarEspecialidadeToolStripMenuItem.Text = "Direcionar Especialidade";
             // 
             // frmMenu
             // 
@@ -92,5 +118,8 @@
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pessoaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem especialidadeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarEspecialidadeToolStripMenuItem;
     }
 }

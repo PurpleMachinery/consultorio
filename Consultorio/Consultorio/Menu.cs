@@ -16,16 +16,23 @@ namespace Consultorio
             InitializeComponent();
         }
 
-        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmCadastro tt = new frmCadastro();
-            tt.MdiParent=this;
-            tt.Show();
-        }
-
         private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmConsulta tt = new frmConsulta();
+            tt.MdiParent = this;
+            tt.Show();
+        }
+
+        private void pessoaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastro tt = new frmCadastro();
+            tt.MdiParent = this;
+            tt.Show();
+        }
+
+        private void especialidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEspecialidade tt = new frmEspecialidade();
             tt.MdiParent = this;
             tt.Show();
         }

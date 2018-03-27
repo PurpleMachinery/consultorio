@@ -9,11 +9,19 @@ using System.Windows.Forms;
 
 namespace Consultorio
 {
-    public partial class frmCadastro : Form
+    public partial class frmLogin : Form
     {
-        public frmCadastro()
+        public frmLogin()
         {
             InitializeComponent();
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            frmMenu tt = new frmMenu();
+            tt.Show();
+            this.Hide();
+            this.Visible = false;
         }
     }
 }

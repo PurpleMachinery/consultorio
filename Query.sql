@@ -15,6 +15,7 @@ CREATE TABLE pessoas(
 
 CREATE TABLE medicos(
 	pk_id INT PRIMARY KEY IDENTITY(1,1),
+	fk_idPessoa INT REFERENCES pessoas(pk_id),
     registroMedicina NVARCHAR(30) NOT NULL
 );
 
@@ -45,6 +46,7 @@ CREATE TABLE funcionarios(
 	fk_idAtendente INT REFERENCES atendentes(pk_id),
 	numeroFuncionario BIGINT NOT NULL
 );
+
 
 CREATE TABLE dsLogin(
 	pk_id INT PRIMARY KEY IDENTITY(1,1),
