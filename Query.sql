@@ -60,8 +60,7 @@ CREATE TABLE agendamentos(
 	pk_id INT PRIMARY KEY IDENTITY(1,1),
 	fk_idPaciente INT REFERENCES pacientes(pk_id),
 	fk_idMedico INT REFERENCES medicos(pk_id),
-	data DATE NOT NULL,
-	hora TIME NOT NULL
+	data DATETIME NOT NULL,
 );
 
 CREATE TABLE historico(

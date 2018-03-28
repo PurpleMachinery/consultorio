@@ -1,6 +1,6 @@
 ﻿namespace Consultorio
 {
-    partial class direcionarEsp
+    partial class frmDirecionar
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,7 @@
             // listExistente
             // 
             this.listExistente.FormattingEnabled = true;
-            this.listExistente.Location = new System.Drawing.Point(25, 119);
+            this.listExistente.Location = new System.Drawing.Point(25, 73);
             this.listExistente.Name = "listExistente";
             this.listExistente.Size = new System.Drawing.Size(204, 160);
             this.listExistente.TabIndex = 0;
@@ -47,14 +47,14 @@
             // listMedico
             // 
             this.listMedico.FormattingEnabled = true;
-            this.listMedico.Location = new System.Drawing.Point(446, 119);
+            this.listMedico.Location = new System.Drawing.Point(349, 73);
             this.listMedico.Name = "listMedico";
             this.listMedico.Size = new System.Drawing.Size(204, 160);
             this.listMedico.TabIndex = 1;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(304, 160);
+            this.btnAdd.Location = new System.Drawing.Point(254, 124);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 2;
@@ -63,7 +63,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(304, 201);
+            this.btnRemove.Location = new System.Drawing.Point(254, 153);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(75, 23);
             this.btnRemove.TabIndex = 3;
@@ -73,32 +73,32 @@
             // cmbMedico
             // 
             this.cmbMedico.FormattingEnabled = true;
-            this.cmbMedico.Location = new System.Drawing.Point(25, 55);
+            this.cmbMedico.Location = new System.Drawing.Point(25, 46);
             this.cmbMedico.Name = "cmbMedico";
-            this.cmbMedico.Size = new System.Drawing.Size(190, 21);
+            this.cmbMedico.Size = new System.Drawing.Size(204, 21);
             this.cmbMedico.TabIndex = 4;
             // 
             // lblMedico
             // 
             this.lblMedico.AutoSize = true;
-            this.lblMedico.Location = new System.Drawing.Point(25, 36);
+            this.lblMedico.Location = new System.Drawing.Point(25, 27);
             this.lblMedico.Name = "lblMedico";
             this.lblMedico.Size = new System.Drawing.Size(42, 13);
             this.lblMedico.TabIndex = 5;
             this.lblMedico.Text = "Medico";
             // 
-            // direcionarEsp
+            // frmDirecionar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 304);
+            this.ClientSize = new System.Drawing.Size(577, 248);
             this.Controls.Add(this.lblMedico);
             this.Controls.Add(this.cmbMedico);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.listMedico);
             this.Controls.Add(this.listExistente);
-            this.Name = "direcionarEsp";
+            this.Name = "frmDirecionar";
             this.Text = "direcionarEsp";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -10,4 +10,4 @@ C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consu
 C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmConsulta.resources
 C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.csprojResolveAssemblyReference.cache
 C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmEspecialidade.resources
-C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.direcionarEsp.resources
+C:\Users\Aluno_2\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmDirecionar.resources

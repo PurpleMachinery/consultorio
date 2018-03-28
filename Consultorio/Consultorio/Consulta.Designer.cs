@@ -32,16 +32,13 @@
             this.lblIdAtendente = new System.Windows.Forms.Label();
             this.lblEspecialidade = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.cmbMedico = new System.Windows.Forms.ComboBox();
             this.brnAgendar = new System.Windows.Forms.Button();
-            this.btnLimpar = new System.Windows.Forms.Button();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.mtxbData = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lblIdPaciente
@@ -80,20 +77,6 @@
             this.lblData.TabIndex = 3;
             this.lblData.Text = "Data";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(112, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(112, 53);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 5;
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -111,76 +94,67 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Medico";
             // 
-            // comboBox2
+            // cmbMedico
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(112, 109);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 10;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(112, 137);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
-            this.textBox3.TabIndex = 11;
+            this.cmbMedico.FormattingEnabled = true;
+            this.cmbMedico.Location = new System.Drawing.Point(112, 109);
+            this.cmbMedico.Name = "cmbMedico";
+            this.cmbMedico.Size = new System.Drawing.Size(121, 21);
+            this.cmbMedico.TabIndex = 10;
             // 
             // brnAgendar
             // 
-            this.brnAgendar.Location = new System.Drawing.Point(59, 214);
+            this.brnAgendar.Location = new System.Drawing.Point(59, 180);
             this.brnAgendar.Name = "brnAgendar";
             this.brnAgendar.Size = new System.Drawing.Size(140, 32);
             this.brnAgendar.TabIndex = 12;
             this.brnAgendar.Text = "Agendar";
             this.brnAgendar.UseVisualStyleBackColor = true;
             // 
-            // btnLimpar
+            // comboBox3
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(59, 252);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(140, 32);
-            this.btnLimpar.TabIndex = 13;
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(112, 28);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 16;
             // 
-            // lblHora
+            // comboBox4
             // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Location = new System.Drawing.Point(12, 165);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(30, 13);
-            this.lblHora.TabIndex = 14;
-            this.lblHora.Text = "Hora";
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(112, 56);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.TabIndex = 17;
             // 
-            // textBox4
+            // mtxbData
             // 
-            this.textBox4.Location = new System.Drawing.Point(112, 165);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 20);
-            this.textBox4.TabIndex = 15;
+            this.mtxbData.Location = new System.Drawing.Point(112, 137);
+            this.mtxbData.Mask = "00/00/0000 90:00";
+            this.mtxbData.Name = "mtxbData";
+            this.mtxbData.Size = new System.Drawing.Size(121, 20);
+            this.mtxbData.TabIndex = 18;
+            this.mtxbData.ValidatingType = typeof(System.DateTime);
             // 
             // frmConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(252, 303);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.lblHora);
-            this.Controls.Add(this.btnLimpar);
+            this.ClientSize = new System.Drawing.Size(252, 223);
+            this.Controls.Add(this.mtxbData);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.brnAgendar);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmbMedico);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.lblEspecialidade);
             this.Controls.Add(this.lblIdAtendente);
             this.Controls.Add(this.lblIdPaciente);
             this.Name = "frmConsulta";
             this.Text = "Agendamento";
+            this.Load += new System.EventHandler(this.frmConsulta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,15 +166,12 @@
         private System.Windows.Forms.Label lblIdAtendente;
         private System.Windows.Forms.Label lblEspecialidade;
         private System.Windows.Forms.Label lblData;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox cmbMedico;
         private System.Windows.Forms.Button brnAgendar;
-        private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Label lblHora;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.MaskedTextBox mtxbData;
     }
 }

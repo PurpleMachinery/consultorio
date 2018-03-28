@@ -15,5 +15,11 @@ namespace Consultorio
         {
             InitializeComponent();
         }
+
+        private void frmConsulta_Load(object sender, EventArgs e)
+        {
+            mtxbData.Text = System.DateTime.Now.ToShortDateString() + System.DateTime.Now.ToShortTimeString();
+            cmbMedico.Enabled = false;
+        }
     }
 }

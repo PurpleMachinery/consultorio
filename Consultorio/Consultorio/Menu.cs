@@ -36,5 +36,12 @@ namespace Consultorio
             tt.MdiParent = this;
             tt.Show();
         }
+
+        private void registrarEspecialidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDirecionar tt = new frmDirecionar();
+            tt.MdiParent = this;
+            tt.Show();
+        }
     }
 }

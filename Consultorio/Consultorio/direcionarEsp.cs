@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Consultorio
 {
-    public partial class direcionarEsp : Form
+    public partial class frmDirecionar : Form
     {
-        public direcionarEsp()
+        public frmDirecionar()
         {
             InitializeComponent();
         }
