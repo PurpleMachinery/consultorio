@@ -1,17 +1,21 @@
 USE master;
-DROP DATABASE dsii;
+--DROP DATABASE dsii;
+
 CREATE DATABASE dsii;
+GO
 USE dsii;
+GO
 
 CREATE TABLE pessoas(
 	pk_id INT PRIMARY KEY IDENTITY(1,1),
     nome NVARCHAR(60) NOT NULL,
     cpf BIGINT NOT NULL,
     nascimento DATE NOT NULL,
-    sexo CHAR NOT NULL,	
+    sexo NVARCHAR(1) NOT NULL,	
 	telefone NVARCHAR(13),
 	endereco NVARCHAR(100)
 )
+select * from pessoas;
 
 CREATE TABLE medicos(
 	pk_id INT PRIMARY KEY IDENTITY(1,1),
