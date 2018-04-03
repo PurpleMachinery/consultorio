@@ -14,7 +14,7 @@ namespace Consultorio
 {
     public partial class frmCadastro : Form
     {
-        SqlConnection conn = new SqlConnection("Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=dsii;Data Source=LAB-06-06");
+        SqlConnection conn = new SqlConnection("Password=info211;Persist Security Info=True;User ID=sa;Initial Catalog=tbdsii;Data Source=(local)");
         public frmCadastro()
         {
             InitializeComponent();
@@ -40,8 +40,33 @@ namespace Consultorio
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {            
-            SqlConnection sqlConnection1 = new SqlConnection("");
-            String sql = "insert into pessoas (nome, cpf, nascimento, sexo, telefone, endereco) values ('wesley', '49004232893', '01-01-2018', 'm', '958192633', 'av va');";
+            String sql = "";
+            if (cmbTipo.Text == "" || txtCPF.Text == "" || txtEndereco.Text == "" || txtNasc.Text == "" || txtNome.Text == "" || txtTel.Text == "" || (rbtFem.Checked==true||rbtMasc.Checked==false)) 
+            {
+                MessageBox.Show("Algum campo está vazio", "Data Entry Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return; 
+            }
+            char sexoo = 'N';
+            if(rbtFem.Checked==true)
+            {
+                sexoo = 'f';
+            }
+            else if (rbtMasc.Checked == true)
+            {
+                sexoo = 'm';
+            }
+            if (cmbTipo.Text == "Medico")
+            {
+                sql = "insert into medicos (nome, cpf, nascimento, sexo, telefone, endereco, registroMedicina) values ('" + txtNome.Text + "','" + txtCPF.Text + "','" + txtNasc.Text + "','" + sexoo + "','" + txtTel.Text + "','" + txtEndereco.Text + "','" + txtRM.Text + "');";
+            }
+            else if (cmbTipo.Text == "Atendente" )
+            {
+                sql = "insert into atendentes (nome, cpf, nascimento, sexo, telefone, endereco) values ('" + txtNome.Text + "','" + txtCPF.Text + "','" + txtNasc.Text + "','" + sexoo + "','" + txtTel.Text + "','" + txtEndereco.Text + "');";
+            }
+            else if (cmbTipo.Text == "Paciente")
+            {
+                sql = "insert into pacientes (nome, cpf, nascimento, sexo, telefone, endereco) values ('" + txtNome.Text + "','" + txtCPF.Text + "','" + txtNasc.Text + "','" + sexoo + "','" + txtTel.Text + "','" + txtEndereco.Text + "');";
+            }
             SqlCommand comando = new SqlCommand(sql, conn);
             conn.Open();
             comando.ExecuteNonQuery();

@@ -24,3 +24,16 @@ C:\Users\Aluno\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consult
 C:\Users\Aluno\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmCadastro.resources
 C:\Users\Aluno\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.Properties.Resources.resources
 C:\Users\Aluno\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.csproj.GenerateResource.Cache
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.exe
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.pdb
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\bin\Debug\Consultorio.exe
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\bin\Debug\Consultorio.pdb
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.csprojResolveAssemblyReference.cache
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmConsulta.resources
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmDirecionar.resources
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmEspecialidade.resources
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmLogin.resources
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmMenu.resources
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.frmCadastro.resources
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.Properties.Resources.resources
+C:\Users\travadinho\Desktop\consultorio\Consultorio\Consultorio\obj\x86\Debug\Consultorio.csproj.GenerateResource.Cache

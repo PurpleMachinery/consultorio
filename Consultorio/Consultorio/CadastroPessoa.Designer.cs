@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtCPF = new System.Windows.Forms.TextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbtMasc = new System.Windows.Forms.RadioButton();
+            this.rbtFem = new System.Windows.Forms.RadioButton();
             this.txtRM = new System.Windows.Forms.TextBox();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.txtNasc = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -58,12 +58,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(96, 61);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtNome.Location = new System.Drawing.Point(96, 61);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(187, 20);
+            this.txtNome.TabIndex = 1;
             // 
             // label2
             // 
@@ -110,34 +110,27 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Endereço";
             // 
-            // textBox2
+            // txtCPF
             // 
-            this.textBox2.Location = new System.Drawing.Point(96, 87);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 20);
-            this.textBox2.TabIndex = 7;
+            this.txtCPF.Location = new System.Drawing.Point(96, 87);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(187, 20);
+            this.txtCPF.TabIndex = 7;
             // 
-            // textBox3
+            // txtTel
             // 
-            this.textBox3.Location = new System.Drawing.Point(96, 114);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(187, 20);
-            this.textBox3.TabIndex = 8;
+            this.txtTel.Location = new System.Drawing.Point(96, 166);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(187, 20);
+            this.txtTel.TabIndex = 10;
             // 
-            // textBox5
+            // txtEndereco
             // 
-            this.textBox5.Location = new System.Drawing.Point(96, 166);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(187, 20);
-            this.textBox5.TabIndex = 10;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(96, 192);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(187, 20);
-            this.textBox6.TabIndex = 11;
+            this.txtEndereco.Location = new System.Drawing.Point(96, 192);
+            this.txtEndereco.Multiline = true;
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(187, 20);
+            this.txtEndereco.TabIndex = 11;
             // 
             // btnCadastrar
             // 
@@ -180,27 +173,27 @@
             this.cmbTipo.TabIndex = 15;
             this.cmbTipo.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
-            // radioButton1
+            // rbtMasc
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(96, 144);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(73, 17);
-            this.radioButton1.TabIndex = 16;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Masculino";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtMasc.AutoSize = true;
+            this.rbtMasc.Location = new System.Drawing.Point(96, 144);
+            this.rbtMasc.Name = "rbtMasc";
+            this.rbtMasc.Size = new System.Drawing.Size(73, 17);
+            this.rbtMasc.TabIndex = 16;
+            this.rbtMasc.TabStop = true;
+            this.rbtMasc.Text = "Masculino";
+            this.rbtMasc.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbtFem
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(198, 144);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(67, 17);
-            this.radioButton2.TabIndex = 17;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Feminino";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtFem.AutoSize = true;
+            this.rbtFem.Location = new System.Drawing.Point(198, 144);
+            this.rbtFem.Name = "rbtFem";
+            this.rbtFem.Size = new System.Drawing.Size(67, 17);
+            this.rbtFem.TabIndex = 17;
+            this.rbtFem.TabStop = true;
+            this.rbtFem.Text = "Feminino";
+            this.rbtFem.UseVisualStyleBackColor = true;
             // 
             // txtRM
             // 
@@ -218,29 +211,38 @@
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
+            // txtNasc
+            // 
+            this.txtNasc.Location = new System.Drawing.Point(96, 117);
+            this.txtNasc.Mask = "00/00/0000";
+            this.txtNasc.Name = "txtNasc";
+            this.txtNasc.Size = new System.Drawing.Size(187, 20);
+            this.txtNasc.TabIndex = 20;
+            this.txtNasc.ValidatingType = typeof(System.DateTime);
+            // 
             // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(307, 358);
+            this.Controls.Add(this.txtNasc);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.txtRM);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbtFem);
+            this.Controls.Add(this.rbtMasc);
             this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtEndereco);
+            this.Controls.Add(this.txtTel);
+            this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
             this.Name = "frmCadastro";
             this.Text = "Cadastro";
@@ -253,23 +255,23 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtCPF;
+        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cmbTipo;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbtMasc;
+        private System.Windows.Forms.RadioButton rbtFem;
         private System.Windows.Forms.TextBox txtRM;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.MaskedTextBox txtNasc;
     }
 }

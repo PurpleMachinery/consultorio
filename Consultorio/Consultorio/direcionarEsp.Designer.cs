@@ -77,6 +77,8 @@
             this.cmbMedico.Name = "cmbMedico";
             this.cmbMedico.Size = new System.Drawing.Size(204, 21);
             this.cmbMedico.TabIndex = 4;
+            this.cmbMedico.SelectedIndexChanged += new System.EventHandler(this.cmbMedico_SelectedIndexChanged);
+            this.cmbMedico.Click += new System.EventHandler(this.cmbMedico_Click);
             // 
             // lblMedico
             // 
